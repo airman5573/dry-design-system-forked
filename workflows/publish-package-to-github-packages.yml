@@ -20,7 +20,7 @@ jobs:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
           token: ${{ secrets.GITHUB_TOKEN }}
-      - run: pnpm install
+      - run: cd packages/cart
       - run: pnpm run build
       - run: npm publish
       
